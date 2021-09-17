@@ -1,0 +1,88 @@
+.main_Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-around;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+
+.cards {
+  height: 275px;
+  width: 200px;
+  background: rgba(217, 242, 255, 0.78);
+  border-radius: 5%;
+  cursor: pointer;
+  overflow: hidden;
+  /*z-index: -1;*/
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-around;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.cards:hover {
+  box-shadow: 0 -0.2px 9px -1px rgba(0, 0, 0, 0.047),
+    0 1px 16px -1px rgba(255, 222, 222, 0.077),
+    0 5px 24px -1px rgba(0, 0, 0, 0.1),
+    0 12px 30px -1px rgba(255, 222, 222, 0.119),
+    0 25px 36px -1px rgba(0, 0, 0, 0.132),
+    0 25px 25px -1px rgba(255, 222, 222, 0.139),
+    0 25px 20px -1px rgba(0, 0, 0, 0.13);
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  background: rgba(217, 242, 255, 0.78);
+}
+
+.Text {
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  text-justify: distribute-all-lines;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.HeaderText {
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #f8606c;
+}
+
+.HeaderText span {
+  border-bottom: 2px solid #f17882;
+}
+
+@media screen and (min-width: 1900px) {
+  .cards {
+    height: 370px;
+    width: 310px;
+  }
+
+  .Text{
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (min-width: 1600px){
+
+}
+
+.TitleText{
+
+  margin-left: 3%;
+}

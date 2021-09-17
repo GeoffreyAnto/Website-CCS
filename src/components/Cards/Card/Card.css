@@ -1,0 +1,37 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Image {
+    height: 60%;
+    width: 50%;
+}
+
+.textContainer{
+    height:40%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Text1{
+    font-size: 20px;
+    text-size-adjust: 40%;
+    font-weight: 500;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.Text2{
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    text-overflow: ellipsis;
+}
