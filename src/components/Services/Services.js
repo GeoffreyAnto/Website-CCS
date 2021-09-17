@@ -31,7 +31,7 @@ const Services = (props) => {
       <div className="cards">
         <div className="HeaderText">
           <CloudIcon fontSize="large" />
-          <span className="TitleText"> CLOUD SERVICES</span>
+          <span className="TitleText"> CLOUD DEVELOPMENT</span>
         </div>
         <div className="Text">
           We provide great outsourcing with affordable cost and minimal time.
