@@ -1,17 +1,17 @@
 import React from "react";
 import "./Card.css";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="container">
       <img
         className="Image"
-        src="https://www.datamatics.com/hubfs/App-Prototyping.svg"
+        src={props.imgUrl}
         alt=""
       />
       <div className="textContainer">
-        <span className="Text1">App Development</span>
-        <span className="Text2"> Design thinking approach to maximize ROI</span>
+        <span className="Text1">{props.Text1}</span>
+        <span className="Text2">{props.Text2}</span>
       </div>
     </div>
   );

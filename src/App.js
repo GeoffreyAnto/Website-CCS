@@ -1,25 +1,19 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Profile from "./components/Profile/Profile";
-import Services from "./components/Services/Services";
-import Infobar from "./components/Infobar/Infobar";
+import Home from "./screens/Home/Home";
+import Detail from "./screens/Detail/Detail";
 
-
-import Technologies from "./components/Cards/Cards";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Infobar />
-      <Navbar />
-      <Header />
-      <Services />
-      <Technologies />
-      <Profile />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/detail" component={Detail} />
+        </Switch>
+      </Router>
     </div>
   );
 }

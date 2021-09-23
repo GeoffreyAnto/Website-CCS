@@ -9,7 +9,7 @@ import WorkIcon from "@material-ui/icons/Work";
 const Services = (props) => {
   return (
     <div className="main_Container">
-      <div className="cards">
+      <div onClick={()=>{}} className="cards">
         <div className="HeaderText">
           <CodeIcon fontSize="large" />
           <span className="TitleText">WEB DEVELOPMENT</span>
@@ -18,7 +18,7 @@ const Services = (props) => {
           We are providing a best web development in various languages.
         </div>
       </div>
-      <div className="cards">
+      <div onClick={()=>{}} className="cards">
         <div className="HeaderText">
           <AndroidSharpIcon fontSize="large" />
           <span className="TitleText">MOBILE APPLICATIONS</span>
@@ -28,7 +28,7 @@ const Services = (props) => {
           applications.
         </div>
       </div>
-      <div className="cards">
+      <div onClick={()=>{}} className="cards">
         <div className="HeaderText">
           <CloudIcon fontSize="large" />
           <span className="TitleText"> CLOUD DEVELOPMENT</span>
@@ -37,7 +37,7 @@ const Services = (props) => {
           We provide great outsourcing with affordable cost and minimal time.
         </div>
       </div>
-      <div className="cards">
+      <div onClick={()=>{}} className="cards">
         <div className="HeaderText">
           <WorkIcon fontSize="large" />
           <span className="TitleText">DATABASE MANAGEMENT</span>
