@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 
+import { Link } from "react-router-dom";
+
 import Logo from "./Logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
 
@@ -13,7 +15,9 @@ const Navbar = (props) => {
 
       <div className="navbar-Elements-Links">
         <div>
-          <span className="NavBarText">Home</span>
+          <Link to="/" className="NavBarText">
+            Home
+          </Link>
         </div>
         <div>
           <span className="NavBarText">About Us</span>
@@ -25,11 +29,13 @@ const Navbar = (props) => {
           <span className="NavBarText">Product</span>
         </div>
         <div>
-          <span className="NavBarText">Contact Us</span>
+          <span className="NavBarText">
+            Contact Us
+          </span>
         </div>
       </div>
       <div className="navbar-Elements-hamburger">
-        <MenuIcon className="icon" onClick={()=>{}} size="large" />
+        <MenuIcon className="icon" onClick={() => {}} size="large" />
       </div>
     </div>
   );
